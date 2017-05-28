@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<style>
+			body {
+				width:420px;
+				
+				background-color:#F8F8F8;
+				font-family:monospace;
+				font-size:14px;
+				font-weight:bold;
+			}
+			a {
+				text-weight:bold;
+				text-shadow:-1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+			}
+		</style>
+	</head>
+	
+	
+	
+	<body style="margin:0px;">
+		<script src="mökki.js"></script>
+		
+		<div style="width:100%;height:240px;">
+			<img id="background" src="kuvat/start.jpg" style="width:100%;height:100%;">
+		</div>
+		
+		<div id="game-stats" style="display:none;">
+			<div style="width:100%;height:auto;float:left;">
+				
+				<div style="float:left;width:50%;">
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="health_bar" style="height:100%;width:0%;background-color:rgba(255,000,000,0.5)">
+							<a id="health" style="color:red;">		</a>
+						</div>
+					</div>
+					
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="thirst_bar" style="height:100%;width:0%;background-color:rgba(000,000,255,0.5)">
+							<a id="thirst" style="color:cyan;">	</a>
+						</div>
+					</div>
+					
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="hunger_bar" style="height:100%;width:0%;background-color:rgba(000,255,000,0.5)">
+							<a id="hunger" style="color:green;">	</a>
+						</div>
+					</div>
+					
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="alco_bar" style="height:100%;width:0%;background-color:rgba(255,255,000,0.5)">
+							<a id="alco" style="color:yellow;">	</a>
+						</div>
+					</div>
+				</div>
+				
+				<div style="float:left;width:50%;">
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="energy_bar" style="height:100%;width:0%;background-color:rgba(255,255,000,0.5)">
+							<a id="energy" style="color:yellow;">	</a>
+						</div>
+					</div>
+					
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="urine_bar" style="height:100%;width:0%;background-color:rgba(000,255,000,0.5)">
+							<a id="urine" style="color:green;">	</a>
+						</div>
+					</div>
+					
+					<div style="position:inherit;background-color:black;height:21px;width:100%;">
+						<div id="shit_bar" style="height:100%;width:0%;background-color:rgba(120,80,70,0.5)">
+							<a id="shit" style="color:brown;">	</a>
+						</div>
+					</div>
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				
+				<a id="fish" style="color:rgb(120,80,70);">Kalat:0</a><br>
+				<a id="beer" style="color:rgb(120,80,70);">Olvit:0</a><br>
+				
+			</div>
+		</div>
+		
+		
+		
+		<div style="width:100%;height:240px;">
+			<div style="height:1px;"></div>
+			<input id="console" style="width:100%;margin-bottom:-1px;" disabled>
+			
+			<br>
+			<div id="start-options" style="display:block;">
+				<button onclick="startgame();updateStats();updateInventory()" style="width:100%;">Käy mökillä</button>
+			</div>
+			<div id="angry-options" style="display:none;">
+				HUMALAMODE----------
+				<button onclick="kill()" style="width:100%;background-color:red;">Hakkaa vaimo</button>
+			</div>
+			<div id="game-options" style="display:none;">
+				<div style="width:50%;float:left;">
+				<button onclick="eat()" style="width:100%;">Syö kalaa</button>
+				<button onclick="drink()" style="width:100%;">Juo kaljaa</button>
+				
+				<button onclick="fishing()" style="width:100%;">Kalasta</button>
+				</div>
+				
+				<div style="width:50%;float:left;">
+				<button onclick="sleep()" style="width:100%;">Nuku</button>
+				<button onclick="urinate()" style="width:100%;">Kuse puskaan</button>
+				<button onclick="shit()" style="width:100%;">Käy paskalla</button>
+				</div>
+				
+				<button onclick="updateStats()" style="width:100%;">Päivitä statsit</button>
+				<button onclick="updateInventory()" style="width:100%;">Päivitä reppu</button>
+				<button onclick="leavegame()" style="width:100%;">Lähde mökiltä</button>
+			</div>
+		</div>
+	</body>
+</html>
