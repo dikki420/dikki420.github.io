@@ -192,3 +192,5 @@ function sleep()
 	updateInventory();
 	updateStats();
 }
+
+//beepsi? bopsi?
