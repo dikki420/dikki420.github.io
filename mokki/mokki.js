@@ -1,15 +1,15 @@
-(function startUp(){
+Ôªø(function startUp(){
 	//alert('kys');
 })()
 
-//k‰‰nnˆkset
-var health_text	= "El‰m‰:";
+//k√§√§nn√∂kset
+var health_text	= "El√§m√§:";
 var healthcount = "100";
 
 var thirst_text	= "Jano:";
 var thirstcount = "50";
 
-var hunger_text	= "N‰lk‰:";
+var hunger_text	= "N√§lk√§:";
 var hungercount = "50";
 
 var alco_text	= "Humalatila:";
@@ -18,10 +18,10 @@ var alcocount	= "0";
 var energy_text	= "Energia:";
 var energycount = "100";
 
-var shit_text	= "Paskah‰t‰:";
+var shit_text	= "Paskah√§t√§:";
 var shitcount	= "0";
 
-var urine_text	= "Kusih‰t‰:";
+var urine_text	= "Kusih√§t√§:";
 var urinecount	= "0";
 
 var fish_text	= "Kalat:";
@@ -43,7 +43,7 @@ function startgame()
 	
 	document.getElementById('start-options').style="display:none;";
 	document.getElementById('game-options').style="display:block;";
-	document.getElementById('console').placeholder="Tervetuloa mˆkille!";
+	document.getElementById('console').placeholder="Tervetuloa m√∂kille!";
 	
 	updateStats()
 }
@@ -174,9 +174,9 @@ function shit()
 
 function kill()
 {
-	changeBackground("kuvat/kyt‰t.jpg");
+	changeBackground("kuvat/kyt√§t.jpg");
 	
-	document.getElementById('console').placeholder="H‰visit pelin!";
+	document.getElementById('console').placeholder="H√§visit pelin!";
 	
 	updateInventory();
 	updateStats();
@@ -184,7 +184,7 @@ function kill()
 
 function sleep()
 {
-	changeBackground("kuvat/s‰nky.jpg");
+	changeBackground("kuvat/s√§nky.jpg");
 	energycount=100;
 	hungercount=parseInt(hungercount)+15;
 	thirstcount=parseInt(thirstcount)+25;
